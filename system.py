@@ -1,4 +1,6 @@
 import datetime
+import requests
+import shutil
 import os
 import time
 from cryptography.fernet import Fernet
@@ -158,7 +160,7 @@ def main():
                 print("Do widzenia!")
                 break
             else:
-                print("Nieprawidłowy wybór. Wybierz opcję 1, 2, 3 lub 4.")
+                print("Nieprawidłowy wybór. Wybierz opcję 1, 2, 3, 4 lub 5.")
         else:
             print("Nieprawidłowe hasło. Dostęp zabroniony.")
 
