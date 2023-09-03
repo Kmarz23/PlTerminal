@@ -1,4 +1,4 @@
-# Moj_OS
+# PyCrafter
 To jest eksperymentalny system napisany w python.
 # Pakiety:
 Wymagane pakiety:
