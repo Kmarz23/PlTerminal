@@ -7,7 +7,7 @@ import json
 
 os.system("clear")
 
-wersja = "1.1.0"
+wersja = "1.2.0"
 
 def is_internet_available():
     try:
@@ -70,6 +70,7 @@ def polecenie_pomoc():
     print("  wyjscie - pozwala wyjść z tej nakładki\n")
     print("  pp instaluj - instaluje pakiet\n")
     print("  altor - pokazuje kto jest altorem\n")
+    print("  kp - pozwala skopiować i wkleić plik\n")
     print("  Nie ma tu jeszcze wszystkich komend jakie mają być wprowadzone,")
     print("  ale morzna wprowadzać inne linux'sowe komendy\n")
 
@@ -120,6 +121,14 @@ def inna_komenda(komenda):
 def altor():
 	print("\nAłtorem jest: Kmarz23/KmarzPL\n")
 
+def kp():
+    sciezka1 = input("Podaj ścieżkę do kopiowania pliku: ")
+    sciezka2 = input("Podaj ścieżkę do wklejenia pliku: ")
+    try:
+        os.system(f"cp {sciezka1} {sciezka2}")
+    except Exception as e:
+        print(f"Wystąpił błąd {e}")
+
 # Dodaj więcej funkcji obsługujących inne polecenia
 
 def main():
@@ -143,6 +152,7 @@ def main():
         	pp_i()
         elif komenda == 'altor':
         	altor()
+	elif komenda == 'kp'
         # Dodaj więcej warunków dla innych poleceń
         elif komenda == 'wyjscie':
             print("Do widzenia!")
