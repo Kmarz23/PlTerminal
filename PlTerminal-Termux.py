@@ -7,7 +7,7 @@ import json
 
 os.system("clear")
 
-wersja = "1.1.0-Termux"
+wersja = "1.1.0"
 
 def is_internet_available():
     try:
