@@ -7,7 +7,7 @@ import json
 
 os.system("clear")
 
-wersja = "1.1.0"
+wersja = "1.2.0"
 
 def is_internet_available():
     try:
@@ -121,6 +121,14 @@ def inna_komenda(komenda):
 def altor():
 	print("\nAłtorem jest: Kmarz23/KmarzPL\n")
 
+def kp():
+    sciezka1 = input("Podaj ścieżkę do kopiowania pliku: ")
+    sciezka2 = input("Podaj ścieżkę do wklejenia pliku: ")
+    try:
+        os.system(f"cp {sciezka1} {sciezka2}")
+    except Exception as e:
+        print(f"Wystąpił błąd {e}")
+
 # Dodaj więcej funkcji obsługujących inne polecenia
 
 def main():
@@ -144,6 +152,8 @@ def main():
         	pp_i()
         elif komenda == 'altor':
         	altor()
+	elif komenda == 'kp':
+		kp()
         # Dodaj więcej warunków dla innych poleceń
         elif komenda == 'wyjscie':
             print("Do widzenia!")
