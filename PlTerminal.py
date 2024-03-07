@@ -71,6 +71,7 @@ def polecenie_pomoc():
     print("  pp instaluj - instaluje pakiet (nie ma potrzeby")
     print("  dodawać przed tym polecenia sudo(jest to już uwzględnone))\n")
     print("  altor - pokazuje kto jest altorem\n")
+    print("  kp - pozwala skopiować i wkleić plik\n")
     print("  Nie ma tu jeszcze wszystkich komend jakie mają być wprowadzone,")
     print("  ale morzna wprowadzać inne linux'sowe komendy\n")
 
